@@ -9,10 +9,6 @@ public class Sender {
     }
 
     public void send(String message) {
-        out.write(message);
-    }
-
-    public void print(String message) {
         out.println(message);
     }
 }

@@ -23,9 +23,9 @@ public class Main {
 
             sender.send("hello world\n");
             Thread.sleep(2000);
+            senderSocket.close();
             receiverThread.interrupt();
             receiverSocket.close();
-            senderSocket.close();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
